@@ -7,35 +7,30 @@ const projects = [
     desc: 'End-to-end data infrastructure — ETL pipelines feeding KPI dashboards, branded email reports, and Slack automations across multiple fulfillment networks.',
     tools: ['Python', 'SQL', 'Redshift', 'QuickSight', 'Datanet'],
     impact: '320+ weekly outputs, multi-FTE workload automated',
-    size: 'col-span-2 row-span-2',
   },
   {
     title: 'AI Agent Orchestration',
     desc: 'Autonomous platform with persistent memory, scheduled jobs, and multi-session coordination — handling operational tasks without human intervention.',
     tools: ['Python', 'Claude API', 'Slack', 'AWS'],
     impact: 'Replaced manual operational workflows at enterprise scale',
-    size: 'col-span-1 row-span-2',
   },
   {
     title: 'Cross-Network Monitoring',
     desc: 'Automated detection and alerting spanning AMXL, NAEF, Canadian fulfillment, and delivery station networks coast to coast.',
     tools: ['AWS Lambda', 'SQS', 'DynamoDB', 'Slack'],
     impact: 'Real-time risk flagging across North America',
-    size: 'col-span-1 row-span-1',
   },
   {
     title: 'Inventory Optimization',
     desc: 'Cross-FC exclusive ASIN comparison identifying transfer candidates between warehouses using Redshift Spectrum at scale.',
     tools: ['SQL', 'QuickSight', 'Redshift Spectrum'],
     impact: 'Surfaced misallocated inventory across network',
-    size: 'col-span-1 row-span-1',
   },
   {
     title: 'Operational Tooling Suite',
     desc: 'VBA macros, Python programs, browser automations, and Slack integrations — self-refreshing analytics adopted by multiple teams beyond originating site.',
     tools: ['Python', 'VBA', 'Playwright', 'Slack API'],
     impact: 'Used daily by ops teams, analysts, and leadership',
-    size: 'col-span-1 row-span-1',
   },
 ]
 
@@ -51,11 +46,11 @@ export default function Projects() {
       <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">Projects</h2>
       <p className="text-neutral-500 mb-16">Data engineering & automation at enterprise scale</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl w-full auto-rows-[180px]">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl w-full">
         {projects.map((p, i) => (
           <motion.div
             key={i}
-            className={`glass rounded-xl p-6 group ${p.size} flex flex-col justify-between`}
+            className={`glass rounded-xl p-6 group flex flex-col justify-between ${i === 0 ? 'md:col-span-2 lg:col-span-2' : ''}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
