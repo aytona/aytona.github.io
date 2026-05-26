@@ -12,7 +12,7 @@ const experiences = [
     date: '2021 – 2023',
     title: 'Process Assistant → Operations Analyst',
     company: 'Amazon (YOO1)',
-    desc: 'Real-time operational reporting, inventory analytics, cross-functional automation. Promoted from L1 FA to L3 PA within 16 months.',
+    desc: 'Managed shift operations for 50+ associates across inbound process paths. Stretched as Bin Meister — owning site space management, pick path optimization, bin audits, and capacity planning. Started as Inbound Problem Solve (Process Guide stretch), resolving receive exceptions and inventory discrepancies. Built Python/SQL automation that led to rapid promotion and pivot into data engineering.',
   },
   {
     date: '2024 – Present',
