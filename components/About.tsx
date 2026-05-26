@@ -47,7 +47,7 @@ export default function About() {
           <div className="mt-6 pt-4 border-t border-neutral-800">
             <div className="flex flex-col gap-1 text-sm text-neutral-500">
               <span>🎓 BSc (Hons) Computer Science — Ontario Tech University, 2021</span>
-              <span>🎓 Adv. Diploma Game Programming — George Brown College, 2017</span>
+              <span>🎓 Adv. Diploma Game Programming — George Brown Polytechnic, 2017</span>
             </div>
           </div>
         </div>
