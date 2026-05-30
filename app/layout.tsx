@@ -8,12 +8,12 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Christopher Aytona | Data & Automation Engineer',
-  description: 'Data & Automation Engineer building ETL pipelines, AI agents, and operational intelligence at scale. Python, SQL, AWS, QuickSight.',
-  keywords: ['Data Analyst', 'Automation Engineer', 'ETL', 'Python', 'SQL', 'AWS', 'QuickSight'],
+  title: 'Christopher Aytona | Data Analyst & Automation Developer',
+  description: 'Data Analyst & Automation Developer building ETL pipelines, AI agents, and operational intelligence at scale. Python, SQL, AWS, QuickSight.',
+  keywords: ['Data Analyst', 'Automation Developer', 'ETL', 'Python', 'SQL', 'AWS', 'QuickSight'],
   authors: [{ name: 'Christopher Aytona' }],
   openGraph: {
-    title: 'Christopher Aytona | Data & Automation Engineer',
+    title: 'Christopher Aytona | Data Analyst & Automation Developer',
     description: 'Building ETL pipelines, AI agents, and operational intelligence at scale.',
     url: 'https://aytona.github.io',
     siteName: 'Christopher Aytona',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Christopher Aytona | Data & Automation Engineer',
+    title: 'Christopher Aytona | Data Analyst & Automation Developer',
     description: 'Building ETL pipelines, AI agents, and operational intelligence at scale.',
   },
   robots: { index: true, follow: true },
