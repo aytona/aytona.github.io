@@ -61,7 +61,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Data & Automation Engineer
+          Data Analyst & Automation Developer
         </motion.p>
         <motion.p
           className="text-sm md:text-base text-neutral-500 mb-8 max-w-lg mx-auto"
