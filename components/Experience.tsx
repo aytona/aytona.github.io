@@ -3,34 +3,34 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    date: '2023 – Present',
-    title: 'Data & Automation Engineer',
-    company: 'Amazon (YGK1 AMXL)',
+    date: '2021 – Present',
+    title: 'Data and Reporting Analyst',
+    company: 'Amazon',
     desc: '36 ETL pipelines, AI agent orchestration (24 agents, 125 skills), QuickSight dashboards, Python/SQL automation. 320+ weekly automated outputs eliminating 40+ hours of manual work.',
   },
   {
-    date: '2021 – 2023',
-    title: 'Process Assistant → Operations Analyst',
-    company: 'Amazon (YOO1)',
-    desc: 'Managed shift operations for 50+ associates across inbound process paths. Stretched as Bin Meister — owning site space management, pick path optimization, bin audits, and capacity planning. Started as Inbound Problem Solve (Process Guide stretch), resolving receive exceptions and inventory discrepancies. Built Python/SQL automation that led to rapid promotion and pivot into data engineering.',
-  },
-  {
-    date: '2024 – Present',
+    date: '2025 – Present',
     title: 'CEO & Founder',
     company: 'TapOrbit Studios',
     desc: 'Game development & publishing studio. Product strategy, team leadership, concept-to-launch pipeline.',
     side: true,
   },
   {
-    date: '2017 – 2021',
+    date: '2018 – 2019',
     title: 'Software Developer',
-    company: 'Various Studios (Toronto)',
-    desc: 'Full-stack development across game and web projects. Unity/C#, React, project management. Shipped 3 titles.',
+    company: 'Treasured',
+    desc: 'Full-stack development across game and web projects. Unity/C#, React, project management.',
   },
   {
-    date: '2015 – 2016',
-    title: 'Game Programmer',
-    company: 'Ruckus Games / Transhumanoid',
+    date: '2016 – 2018',
+    title: 'Game Developer',
+    company: 'Transhumanoid Productions',
+    desc: 'Gameplay systems, UI programming, and full development lifecycle on indie titles.',
+  },
+  {
+    date: '2014 – 2017',
+    title: 'Game Developer',
+    company: 'Ruckus Games',
     desc: 'Gameplay systems, UI programming, iOS/Android builds. First industry role during college.',
   },
 ]

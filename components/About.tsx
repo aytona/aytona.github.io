@@ -37,7 +37,7 @@ export default function About() {
             the need for manual intervention.
           </p>
           <div className="flex flex-wrap gap-2 mt-6">
-            {['Python', 'SQL', 'Redshift', 'QuickSight', 'ETL/Datanet', 'AWS Lambda', 'Pandas'].map(tag => (
+            {['Python', 'SQL', 'Redshift', 'QuickSight', 'ETL Pipelines', 'AWS Lambda', 'Pandas'].map(tag => (
               <span key={tag} className="text-xs px-3 py-1 rounded-full bg-cyan-400/10 text-cyan-400 border border-cyan-400/20">
                 {tag}
               </span>
