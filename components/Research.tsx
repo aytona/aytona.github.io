@@ -13,7 +13,7 @@ const publications = [
       ssrn: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6898739',
     },
     abstract:
-      'Proposes six architectural patterns for building persistent AI agent harnesses that self-heal, delegate across failure boundaries, and maintain operational continuity without human intervention. Extracted from 25 months of production evolution.',
+      'Large language model agents deployed in persistent, multi-session environments face compounding challenges: memory degrades without governance, coordination between concurrent agents lacks formal guarantees, skill acquisition proceeds without quality control, and self-improvement operates without safety bounds. We present SHARD (Self-Healing Agent with Resilient Delegation), a harness-agnostic application architecture that composes four independent subsystems—memory governance with staleness detection, intent-based coordination protocol, quality-gated skill lifecycle with trust tiers, and safety-constrained self-improvement—into an integrated infrastructure where emergent behaviors arise from their interaction.',
     tags: ['AI Agents', 'Resilience', 'Self-Healing', 'Architecture Patterns'],
   },
 ]
