@@ -37,7 +37,16 @@ export default function Games() {
               <p className="text-xs font-semibold tracking-[0.2em] text-pink-400 uppercase">
                 Now Available &nbsp;·&nbsp; iOS &amp; Android
               </p>
-              <h3 className="text-3xl md:text-4xl font-bold mt-2 bg-gradient-to-br from-cyan-400 to-pink-500 bg-clip-text text-transparent">Zombie Citizen</h3>
+              <h3
+                className="text-3xl md:text-4xl font-bold mt-2"
+                style={{
+                  background: 'linear-gradient(135deg, #06b6d4, #ec4899)',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  color: 'transparent',
+                }}
+              >Zombie Citizen</h3>
               <p className="text-neutral-300 text-sm md:text-base mt-3">
                 A fast, top-down shooter where every run pulls you deeper into chaos.
               </p>

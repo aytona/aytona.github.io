@@ -39,7 +39,7 @@ export default function Nav() {
           <a
             key={s}
             href={`#${s.toLowerCase()}`}
-            className="text-xs text-neutral-400 hover:text-cyan-400 transition-colors"
+            className="text-xs text-neutral-400 hover:text-cyan-400 transition-colors whitespace-nowrap flex-shrink-0"
           >
             {s}
           </a>
