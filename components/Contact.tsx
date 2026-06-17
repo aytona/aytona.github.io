@@ -29,7 +29,7 @@ export default function Contact() {
             key={i}
             href={link.href}
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="glass px-8 py-4 rounded-xl hover:border-cyan-400/30 transition-colors magnetic-btn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

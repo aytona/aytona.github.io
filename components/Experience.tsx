@@ -6,13 +6,13 @@ const experiences = [
     date: '2021 – Present',
     title: 'Data and Reporting Analyst',
     company: 'Amazon',
-    desc: '36 ETL pipelines, AI agent orchestration (24 agents, 125 skills), QuickSight dashboards, Python/SQL automation. 320+ weekly automated outputs eliminating 40+ hours of manual work.',
+    desc: 'A continually growing suite of ETL pipelines, AI agent orchestration, QuickSight dashboards, and Python/SQL automation — hundreds of automated outputs each week that eliminate dozens of hours of manual work across multiple fulfillment networks.',
   },
   {
     date: '2025 – Present',
     title: 'CEO & Founder',
     company: 'TapOrbit Studios',
-    desc: 'Game development & publishing studio. Product strategy, team leadership, concept-to-launch pipeline.',
+    desc: 'Game development & publishing studio. Shipped debut title Zombie Citizen to iOS & Android; currently developing Everlasting Odyssey, a tactical RPG for PC & console. Product strategy, team leadership, concept-to-launch pipeline.',
     side: true,
   },
   {
