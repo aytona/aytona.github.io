@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-const sections = ['Home', 'About', 'Experience', 'Skills', 'Projects', 'Research', 'Contact']
+const sections = ['Home', 'About', 'Experience', 'Skills', 'Projects', 'Release', 'Research', 'Contact']
 
 export default function Nav() {
   const [progress, setProgress] = useState(0)
