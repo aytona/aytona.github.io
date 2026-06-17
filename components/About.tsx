@@ -13,7 +13,7 @@ export default function About() {
       >
         <div className="w-64 h-64 mx-auto rounded-2xl overflow-hidden glass">
           <img
-            src="/headshot.jpg"
+            src="/profile.jpg"
             alt="Christopher Aytona"
             className="w-full h-full object-cover"
             onError={(e) => {
