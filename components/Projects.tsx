@@ -34,12 +34,6 @@ const projects = [
   },
 ]
 
-const sideProjects = [
-  { title: 'TapOrbit Studios', desc: 'Game development & publishing company (CEO/Founder)' },
-  { title: 'Dark Spirits', desc: 'Unity 3D action RPG — gameplay systems & AI' },
-  { title: 'Synapse', desc: 'Multiplayer puzzle game — networking & state sync' },
-]
-
 export default function Projects() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center py-24 px-6">
@@ -71,20 +65,6 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
-
-      <details className="mt-12 max-w-5xl w-full">
-        <summary className="text-neutral-500 text-sm cursor-pointer hover:text-cyan-400 transition">
-          + Side Projects & Game Development
-        </summary>
-        <div className="grid md:grid-cols-3 gap-4 mt-4">
-          {sideProjects.map((p, i) => (
-            <div key={i} className="glass rounded-xl p-4">
-              <h4 className="font-bold text-sm">{p.title}</h4>
-              <p className="text-neutral-500 text-xs mt-1">{p.desc}</p>
-            </div>
-          ))}
-        </div>
-      </details>
     </section>
   )
 }
