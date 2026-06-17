@@ -41,21 +41,21 @@ export default function Experience() {
       <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-16">Experience</h2>
 
       <div className="relative max-w-2xl w-full">
-        {/* Timeline line */}
-        <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/50 via-pink-500/50 to-transparent" />
+        {/* Timeline line - hidden on mobile */}
+        <div className="hidden md:block absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/50 via-pink-500/50 to-transparent" />
 
         <div className="flex flex-col gap-8">
           {experiences.map((exp, i) => (
             <motion.div
               key={i}
-              className={`relative pl-12 ${exp.side ? 'opacity-80' : ''}`}
+              className={`relative pl-0 md:pl-12 ${exp.side ? 'opacity-80' : ''}`}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              {/* Timeline dot */}
-              <div className={`absolute left-2.5 top-2 w-3 h-3 rounded-full ${exp.side ? 'bg-pink-500' : 'bg-cyan-400'}`} />
+              {/* Timeline dot - hidden on mobile */}
+              <div className={`hidden md:block absolute left-2.5 top-2 w-3 h-3 rounded-full ${exp.side ? 'bg-pink-500' : 'bg-cyan-400'}`} />
 
               <div className="glass rounded-xl p-5">
                 <div className="flex items-center gap-3 mb-1">
