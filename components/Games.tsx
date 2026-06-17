@@ -119,10 +119,11 @@ export default function Games() {
               src="/everlasting-odyssey-splash.jpg"
               alt="Everlasting Odyssey splash art"
               className="absolute inset-0 w-full h-full object-cover object-left-bottom scale-105 origin-bottom-left"
+              style={{
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
+                maskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
+              }}
             />
-            {/* Soft gradient blending the art into the text panel — fades from the
-                page background to transparent, anchored flush so there is no hard seam */}
-            <div className="hidden md:block absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-[#0c0c0c] to-transparent pointer-events-none" />
           </div>
         </motion.div>
 
