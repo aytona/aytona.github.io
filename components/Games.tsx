@@ -86,7 +86,7 @@ export default function Games() {
           <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-pink-500 z-20" />
 
           {/* Text panel — 35% */}
-          <div className="order-2 md:order-1 md:w-[35%] p-8 relative z-10">
+          <div className="order-2 md:order-1 md:w-[40%] p-8 relative z-10">
             <span className="inline-block text-[10px] font-semibold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full bg-pink-500/15 text-pink-400 border border-pink-500/30">
               In Development
             </span>
@@ -102,26 +102,23 @@ export default function Games() {
                 </span>
               ))}
             </div>
-            <div className="flex items-center gap-4 mt-6">
-              <span className="px-4 py-2 rounded-lg text-sm text-neutral-300 border border-neutral-700 bg-neutral-800/40">
-                Coming Soon
-              </span>
+            <div className="mt-6">
               <a
                 href="https://taporbitstudios.ca/"
                 target="_blank" rel="noopener noreferrer"
-                className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+                className="inline-block px-4 py-2 rounded-lg text-sm text-cyan-400 border border-cyan-400/40 bg-cyan-400/5 hover:bg-cyan-400/10 transition-colors"
               >
-                TapOrbit Studios ↗
+                Coming Soon
               </a>
             </div>
           </div>
 
           {/* Art — 65% */}
-          <div className="order-1 md:order-2 md:w-[65%] relative min-h-[240px] md:min-h-[420px]">
+          <div className="order-1 md:order-2 md:w-[60%] relative min-h-[240px] md:min-h-[420px] overflow-hidden">
             <img
               src="/everlasting-odyssey-splash.jpg"
               alt="Everlasting Odyssey splash art"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-left-bottom scale-105"
             />
             {/* Gradient seam fading art into the text panel (desktop) */}
             <div className="hidden md:block absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-[#0c0c0c] to-transparent" />
