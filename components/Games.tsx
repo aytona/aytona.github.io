@@ -37,7 +37,7 @@ export default function Games() {
               <p className="text-xs font-semibold tracking-[0.2em] text-pink-400 uppercase">
                 Now Available &nbsp;·&nbsp; iOS &amp; Android
               </p>
-              <h3 className="text-3xl md:text-4xl font-bold gradient-text mt-2">Zombie Citizen</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mt-2 bg-gradient-to-br from-cyan-400 to-pink-500 bg-clip-text text-transparent">Zombie Citizen</h3>
               <p className="text-neutral-300 text-sm md:text-base mt-3">
                 A fast, top-down shooter where every run pulls you deeper into chaos.
               </p>
@@ -77,7 +77,7 @@ export default function Games() {
 
         {/* Everlasting Odyssey — In Development (65/35 art/text) */}
         <motion.div
-          className="glass rounded-2xl relative overflow-hidden flex flex-col md:flex-row"
+          className="glass rounded-2xl relative overflow-hidden flex flex-col md:flex-row md:items-stretch"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -114,12 +114,13 @@ export default function Games() {
           </div>
 
           {/* Art — 65% */}
-          <div className="order-1 md:order-2 md:w-[65%] relative min-h-[240px] md:min-h-[420px] overflow-hidden">
+          <div className="order-1 md:order-2 md:w-[65%] relative min-h-[240px] overflow-hidden">
             <img
               src="/everlasting-odyssey-splash.jpg"
               alt="Everlasting Odyssey splash art"
-              className="absolute inset-0 w-full h-full object-cover object-left-bottom scale-105 origin-bottom-left"
+              className="absolute inset-0 w-full h-full object-cover scale-105 origin-bottom-left"
               style={{
+                objectPosition: '2% 100%',
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
                 maskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
               }}
