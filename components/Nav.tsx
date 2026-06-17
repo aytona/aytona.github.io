@@ -30,7 +30,7 @@ export default function Nav() {
 
       {/* Floating nav */}
       <motion.nav
-        className="fixed top-4 left-1/2 -translate-x-1/2 z-40 glass rounded-full px-6 py-2 flex gap-4"
+        className="fixed top-4 left-1/2 -translate-x-1/2 z-40 glass rounded-full px-4 md:px-6 py-2 flex gap-2 md:gap-4 max-w-[calc(100vw-2rem)] overflow-x-auto scrollbar-hide"
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: visible ? 0 : -60, opacity: visible ? 1 : 0 }}
         transition={{ type: 'spring', stiffness: 200 }}
