@@ -118,7 +118,11 @@ export default function Games() {
             <img
               src="/everlasting-odyssey-splash.jpg"
               alt="Everlasting Odyssey splash art"
-              className="absolute inset-0 w-full h-full object-cover object-bottom"
+              className="absolute inset-0 w-full h-full object-cover object-left-bottom scale-105 origin-bottom-left"
+              style={{
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
+                maskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
+              }}
             />
           </div>
         </motion.div>
