@@ -3,6 +3,7 @@ import CursorGlow from '@/components/CursorGlow'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
+import Testimonials from '@/components/Testimonials'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Games from '@/components/Games'
@@ -17,6 +18,7 @@ export default function Home() {
       <section id="home"><Hero /></section>
       <section id="about"><About /></section>
       <section id="experience"><Experience /></section>
+      <Testimonials />
       <section id="skills"><Skills /></section>
       <section id="projects"><Projects /></section>
       <section id="games"><Games /></section>
