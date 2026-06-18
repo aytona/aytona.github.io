@@ -6,7 +6,7 @@ export default function Contact() {
     <section className="min-h-screen flex flex-col items-center justify-center py-24 px-6">
       <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-8">Get In Touch</h2>
       <p className="text-neutral-400 mb-12 text-center max-w-md">
-        Looking for a Data Analyst or Automation Developer who ships at scale? Let&apos;s talk.
+        Always open to conversations about data engineering, automation, and AI systems — especially roles blending technical depth with leadership.
       </p>
 
       {/* Primary CTA */}

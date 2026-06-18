@@ -61,7 +61,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Data Analyst & Automation Developer
+          Data Analyst & Automation Engineer
         </motion.p>
         <motion.p
           className="text-sm md:text-base text-neutral-500 mb-8 max-w-lg mx-auto"
@@ -69,7 +69,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          Software engineer turned data specialist — building pipelines, dashboards, and AI systems that run themselves across North America.
+          8+ years building software systems — now designing pipelines, dashboards, and AI agents that run themselves at enterprise scale.
         </motion.p>
         <motion.div
           className="flex gap-4 justify-center flex-wrap"
