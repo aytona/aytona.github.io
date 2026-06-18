@@ -5,18 +5,18 @@ const testimonials = [
   {
     quote: 'Thank you for your help and for the time you dedicated to supporting my site with setting up the labor tracking alerts channel. We greatly appreciate the solution you provided and your continued support.',
     name: 'Khalil G.',
-    role: 'Operations Manager',
+    role: 'Transportation Operations Manager',
   },
   {
     quote: 'Thank you for your detailed review of my work! I appreciate your thorough feedback and commitment to high standards.',
     name: 'Pavan P.',
-    role: 'Data Analyst',
+    role: 'Area Manager',
     lps: 'Dive Deep · Deliver Results',
   },
   {
     quote: 'Thanks for leading such a great fun and engaging quality learning session for the team.',
     name: 'Raveendranadh K.',
-    role: 'Senior Operations Manager',
+    role: 'Operations Manager',
   },
 ]
 
