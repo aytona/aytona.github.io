@@ -127,12 +127,10 @@ export default function Games() {
             <img
               src="/everlasting-odyssey-splash.jpg"
               alt="Everlasting Odyssey splash art"
-              className="absolute inset-0 w-full h-full object-cover origin-bottom-left"
+              className="absolute inset-0 w-full h-full object-cover origin-bottom-left eo-art-mask"
               style={{
                 objectPosition: '2% 100%',
                 transform: 'scale(1.05) translateX(-2%)',
-                WebkitMaskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
-                maskImage: 'linear-gradient(to right, transparent 0, #000 16%)',
               }}
             />
           </div>

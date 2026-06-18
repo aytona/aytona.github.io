@@ -43,6 +43,18 @@ body::before {
   background-clip: text;
 }
 
+/* EO splash art edge fade: vertical (bottom) on mobile stacked layout, horizontal (left) on desktop side-by-side */
+.eo-art-mask {
+  -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+}
+@media (min-width: 768px) {
+  .eo-art-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16%);
+    mask-image: linear-gradient(to right, transparent 0, #000 16%);
+  }
+}
+
 /* Magnetic button base */
 .magnetic-btn {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
