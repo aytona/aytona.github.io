@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page {
+    size: letter;
+    margin: 0.5in 0.6in;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Calibri', 'Segoe UI', sans-serif; font-size: 10pt; line-height: 1.4; color: #222; }
+a { color: #222; text-decoration: none; }
+
+.header { text-align: center; margin-bottom: 10px; }
+.header h1 { font-size: 20pt; font-weight: bold; margin-bottom: 2px; }
+.header .subtitle { font-size: 11pt; color: #444; margin-bottom: 4px; }
+.header .contact { font-size: 9pt; color: #555; }
+.header .contact a { color: #555; }
+
+.summary { font-size: 9.5pt; color: #333; margin-bottom: 12px; text-align: justify; }
+
+h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1.5px solid #333; padding-bottom: 2px; margin: 14px 0 8px 0; }
+
+.skills-grid { display: flex; gap: 20px; font-size: 9.5pt; }
+.skills-grid .col { flex: 1; }
+.skills-grid .col p { margin-bottom: 3px; }
+.skills-grid .label { font-weight: bold; }
+
+.job { margin-bottom: 10px; }
+.job-header { display: flex; justify-content: space-between; align-items: baseline; }
+.job-title { font-weight: bold; font-size: 10.5pt; }
+.job-date { font-size: 9pt; color: #555; }
+.job-company { font-size: 9.5pt; color: #444; margin-bottom: 3px; }
+.job-company .side { font-size: 8pt; background: #eee; padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
+.job ul { padding-left: 16px; font-size: 9.5pt; }
+.job li { margin-bottom: 2px; }
+
+.education p { font-size: 9.5pt; margin-bottom: 3px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Christopher Aytona</h1>
+  <div class="subtitle">Data Analyst & Automation Engineer</div>
+  <div class="contact">
+    Toronto, ON, Canada | (289) 200-6079 | christopher.aytona@gmail.com |
+    <a href="https://linkedin.com/in/christopheraytona">linkedin.com/in/christopheraytona</a> |
+    <a href="https://github.com/aytona">github.com/aytona</a>
+  </div>
+</div>
+
+<p class="summary">
+Operations leader with 14+ years of progressive leadership experience spanning data analytics,
+software development, and fulfillment center operations. Currently a Data and Reporting Analyst at
+Amazon, owning site-wide ETL pipelines, QuickSight dashboards, and quality KPIs that drove #1 network
+ranking. Previously led engineering teams at multiple startups, managed full product lifecycles, and
+currently runs an indie game studio as CEO. Combines deep technical skills (Python, SQL, AWS) with
+proven people management, cross-functional coordination, and operational excellence.
+</p>
+
+<h2>Technical Skills</h2>
+<div class="skills-grid">
+  <div class="col">
+    <p><span class="label">Languages:</span> Python, SQL, JavaScript, VBA, C#</p>
+    <p><span class="label">Databases:</span> Amazon Redshift, MySQL, DynamoDB</p>
+    <p><span class="label">Frameworks:</span> pandas, selenium, boto3, Flask, Playwright</p>
+  </div>
+  <div class="col">
+    <p><span class="label">Tools:</span> QuickSight, Excel, Slack API, Git, AWS (Lambda, S3, CloudWatch, CDK), Unity Engine</p>
+    <p><span class="label">Methods:</span> Agile, Lean, Six Sigma principles, ETL design, Scrum</p>
+  </div>
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Data and Reporting Analyst (L4)</span>
+    <span class="job-date">Sep 2023 - Present</span>
+  </div>
+  <div class="job-company">Amazon - Belleville, ON</div>
+  <ul>
+    <li>Owned Quality KPI performance as site-level SME, supporting #1 network Quality ranking and sustained Top 5 performance</li>
+    <li>Built 36+ automated ETL data pipelines monitoring defect rates, missorts, aged inventory, and labour metrics</li>
+    <li>Designed Python/VBA automation tools and QuickSight dashboards improving operational visibility across 4 departments</li>
+    <li>Created 13 Slack webhook integrations delivering 300+ automated outputs per week to cross-functional teams</li>
+    <li>Drove real-time escalation handling and RCA to resolve shift-critical issues impacting customer delivery</li>
+    <li>Designed inbound high-risk ASIN flagging system (IHRA) scoped across 32 AMXL FCs network-wide</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Process Assistant (L3)</span>
+    <span class="job-date">Jan 2023 - Sep 2023</span>
+  </div>
+  <div class="job-company">Amazon - Ajax, ON</div>
+  <ul>
+    <li>Led shift operations managing 30+ hourly associates to meet delivery and quality SLAs</li>
+    <li>Owned floor execution including labour allocation, rate monitoring, and real-time problem solving</li>
+    <li>Coordinated cross-functional handoffs between Inbound, Outbound, and ICQA departments</li>
+    <li>Drove safety compliance and quality standards on the floor during peak volume periods</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Fulfillment Associate (L1)</span>
+    <span class="job-date">Sep 2021 - Jan 2023</span>
+  </div>
+  <div class="job-company">Amazon - Ajax, ON</div>
+  <ul>
+    <li>Consistently exceeded rate targets across multiple paths (pick, stow, pack)</li>
+    <li>Cross-trained across departments; selected for PA promotion within 16 months</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Managing Director / CEO (Side Venture)</span>
+    <span class="job-date">Jan 2025 - Present</span>
+  </div>
+  <div class="job-company">TapOrbit Studios - Toronto, ON</div>
+  <ul>
+    <li>Founded and operate indie game studio managing team members, project timelines, and business finances</li>
+    <li>Oversee product roadmap, hiring decisions, and go-to-market strategy</li>
+    <li>Step into development (Unity/C#) when needed to unblock technical work</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Software Developer</span>
+    <span class="job-date">Sep 2018 - Oct 2019</span>
+  </div>
+  <div class="job-company">Treasured - Markham, ON</div>
+  <ul>
+    <li>Researched and developed VR/AR virtual world functionality using Oculus and Magic Leap platforms</li>
+    <li>Worked closely with CTO on R&D direction while leading team execution and task delegation</li>
+    <li>Built interactive experiences for a SaaS product creating memorial virtual worlds for bereaved families</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Game Developer (Team Lead)</span>
+    <span class="job-date">Oct 2016 - Jan 2018</span>
+  </div>
+  <div class="job-company">Transhumanoid Productions - Remote (Worldwide team)</div>
+  <ul>
+    <li>Led UI development and custom dialog tree system for AA-scope game project (hundreds of thousands $ budget)</li>
+    <li>Managed distributed worldwide team - delegating tasks, tracking progress, reporting to CTO</li>
+    <li>Owned Git-based project management and version control workflows for the team</li>
+    <li>Developed in Unity Engine with focus on UI functionality and narrative systems</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Game Developer (Engineering Lead)</span>
+    <span class="job-date">Sep 2014 - Oct 2017</span>
+  </div>
+  <div class="job-company">Ruckus Games - Toronto, ON</div>
+  <ul>
+    <li>Led entire engineering/development department at startup, reporting directly to CEO</li>
+    <li>Owned end-to-end game development: mechanics, algorithms, level design, monetization strategy</li>
+    <li>Developed prototype games in Unity Engine pitched and sold to local companies</li>
+    <li>Managed project delivery through GitHub including code reviews and release coordination</li>
+    <li>Started role while still in school; grew into full engineering ownership</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Peer Tutor (Senior/Team Lead)</span>
+    <span class="job-date">Sep 2014 - May 2017</span>
+  </div>
+  <div class="job-company">George Brown College - Toronto, ON</div>
+  <ul>
+    <li>Mentored fellow students in programming, math, and game development coursework</li>
+    <li>Served as go-to resource and informal team lead among peer tutoring staff</li>
+    <li>Developed communication and teaching skills translating complex technical concepts</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Data Entry Clerk (Senior/Team Lead)</span>
+    <span class="job-date">Jul 2011 - Sep 2014</span>
+  </div>
+  <div class="job-company">MPAC (Municipal Property Assessment Corporation) - Toronto, ON</div>
+  <ul>
+    <li>Processed and validated property assessment data with high accuracy over 3+ years</li>
+    <li>Became go-to resource and informal team lead among peers at same level</li>
+    <li>First professional role establishing foundation in data handling and attention to detail</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="education">
+  <p><strong>Bachelor of Computer Science</strong> - Ontario Tech University, 2021</p>
+  <p><strong>Advanced Diploma in Game Programming</strong> - George Brown College, 2017 - Graduate with Honours | Dean's List | Student Representative | Leadership Academy</p>
+</div>
+
+</body>
+</html>
