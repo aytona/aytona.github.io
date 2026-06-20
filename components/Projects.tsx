@@ -71,6 +71,7 @@ const projects = [
 export default function Projects() {
   const [current, setCurrent] = useState(0)
   const [visibleCount, setVisibleCount] = useState(3)
+  const [expanded, setExpanded] = useState<number | null>(null)
   const trackRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -113,17 +114,19 @@ export default function Projects() {
             {projects.map((p, i) => (
               <motion.div
                 key={i}
-                className="glass rounded-xl p-6 group flex flex-col justify-between flex-shrink-0"
+                className="glass rounded-xl p-6 group flex flex-col justify-between flex-shrink-0 cursor-pointer"
                 style={{ width: `calc((100% - ${(visibleCount - 1) * 16}px) / ${visibleCount})` }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: (i % visibleCount) * 0.1 }}
+                onClick={() => setExpanded(expanded === i ? null : i)}
               >
                 <div>
                   <span className="text-[11px] text-cyan-400 font-medium">{p.date}</span>
                   <h3 className="text-lg font-bold group-hover:text-cyan-400 transition-colors mt-1">{p.title}</h3>
-                  <p className="text-neutral-500 text-sm mt-2 line-clamp-4">{p.desc}</p>
+                  <p className={`text-neutral-500 text-sm mt-2 ${expanded === i ? '' : 'line-clamp-3'}`}>{p.desc}</p>
+                  {expanded !== i && <span className="text-[10px] text-neutral-600 mt-1 block">tap to expand</span>}
                 </div>
                 <div className="mt-auto pt-3">
                   <div className="flex flex-wrap gap-1.5 mb-2">
