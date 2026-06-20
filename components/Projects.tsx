@@ -35,7 +35,7 @@ const projects = [
     title: 'DART Coaching Tracker',
     date: 'Q2 2026',
     desc: 'Full-stack web application for tracking and managing associate coaching records with automated Slack notifications, audit trails, and manager dashboards.',
-    tools: ['Flask', 'AWS Lambda', 'DynamoDB', 'Bedrock LLM', 'S3', 'Slack API', 'ECS Fargate'],
+    tools: ['Flask', 'AWS Lambda', 'DynamoDB', 'AWS Bedrock', 'S3', 'Slack API', 'ECS Fargate'],
     impact: 'Centralized coaching visibility replacing fragmented spreadsheet tracking across sites',
   },
   {
