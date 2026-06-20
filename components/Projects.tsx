@@ -104,17 +104,17 @@ export default function Projects() {
         )}
 
         {/* Track */}
-        <div className="overflow-hidden">
+        <div className="overflow-hidden px-1">
           <div
             ref={trackRef}
             className="flex gap-4 transition-transform duration-400 ease-out"
-            style={{ transform: `translateX(-${current * (100 / visibleCount)}%)` }}
+            style={{ transform: `translateX(calc(-${current} * (${100 / visibleCount}% + ${16 / visibleCount}px)))` }}
           >
             {projects.map((p, i) => (
               <motion.div
                 key={i}
                 className="glass rounded-xl p-6 group flex flex-col justify-between flex-shrink-0"
-                style={{ width: `calc(${100 / visibleCount}% - ${((visibleCount - 1) * 16) / visibleCount}px)` }}
+                style={{ width: `calc((100% - ${(visibleCount - 1) * 16}px) / ${visibleCount})` }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
