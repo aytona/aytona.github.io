@@ -32,10 +32,17 @@ const projects = [
     impact: 'Real-time departmental labour visibility replacing manual data pulls across 4 sites',
   },
   {
+    title: 'DART Coaching Tracker',
+    date: 'Q2 2026',
+    desc: 'Full-stack web application for tracking and managing associate coaching records with automated Slack notifications, audit trails, and manager dashboards.',
+    tools: ['React', 'AWS Lambda', 'DynamoDB', 'Slack API', 'Harmony'],
+    impact: 'Centralized coaching visibility replacing fragmented spreadsheet tracking across sites',
+  },
+  {
     title: 'TRB Reporting (NAEF)',
     date: 'Q3 2025',
     desc: 'Network-wide monitoring system tracking capacity constraint activations across 3P sites — duration, timing, process path impact, and customer service level effects.',
-    tools: ['SQL', 'ETL Scheduling', 'S3', 'Cross-Account IAM'],
+    tools: ['SQL', 'ETL Scheduling', 'S3', 'Lambda', 'Cross-Account IAM'],
     impact: 'First centralized view of network capacity constraints for NAEF operations leadership',
   },
   {
