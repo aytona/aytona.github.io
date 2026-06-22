@@ -32,8 +32,17 @@ h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; border-bot
 .job-date { font-size: 9pt; color: #555; }
 .job-company { font-size: 9.5pt; color: #444; margin-bottom: 3px; }
 .job-company .side { font-size: 8pt; background: #eee; padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
+.job-progression { font-size: 9pt; color: #555; margin-bottom: 4px; }
+.job-progression span { display: inline-block; margin-right: 12px; }
 .job ul { padding-left: 16px; font-size: 9.5pt; }
 .job li { margin-bottom: 2px; }
+
+.prev-roles { font-size: 9.5pt; margin-bottom: 10px; }
+.prev-roles p { margin-bottom: 2px; }
+.prev-roles .role-line { font-weight: bold; }
+
+.publications { font-size: 9.5pt; margin-bottom: 10px; }
+.publications p { margin-bottom: 3px; }
 
 .education p { font-size: 9.5pt; margin-bottom: 3px; }
 </style>
@@ -42,21 +51,20 @@ h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; border-bot
 
 <div class="header">
   <h1>Christopher Aytona</h1>
-  <div class="subtitle">Data Analyst & Automation Engineer</div>
+  <div class="subtitle">Data and Reporting Analyst | Automation & Data Engineering</div>
   <div class="contact">
-    Toronto, ON, Canada | (289) 200-6079 | christopher.aytona@gmail.com |
+    Toronto, ON, Canada (Open to US relocation / US remote) | (289) 200-6079 | christopher.aytona@gmail.com<br>
     <a href="https://linkedin.com/in/christopheraytona">linkedin.com/in/christopheraytona</a> |
-    <a href="https://github.com/aytona">github.com/aytona</a>
+    <a href="https://github.com/aytona">github.com/aytona</a> |
+    <a href="https://aytona.github.io">aytona.github.io</a>
   </div>
 </div>
 
 <p class="summary">
-Operations leader with 14+ years of progressive leadership experience spanning data analytics,
-software development, and fulfillment center operations. Currently a Data and Reporting Analyst at
-Amazon, owning site-wide ETL pipelines, QuickSight dashboards, and quality KPIs that drove #1 network
-ranking. Previously led engineering teams at multiple startups, managed full product lifecycles, and
-currently runs an indie game studio as CEO. Combines deep technical skills (Python, SQL, AWS) with
-proven people management, cross-functional coordination, and operational excellence.
+Data and automation engineer building production-grade ETL pipelines, real-time monitoring systems, and
+AI-driven operational tools at enterprise scale. 8+ years of software engineering across startups,
+operations technology, and applied AI — including a published research paper on autonomous agent
+architecture. Open to relocation for the right opportunity.
 </p>
 
 <h2>Technical Skills</h2>
@@ -67,8 +75,8 @@ proven people management, cross-functional coordination, and operational excelle
     <p><span class="label">Frameworks:</span> pandas, selenium, boto3, Flask, Playwright</p>
   </div>
   <div class="col">
-    <p><span class="label">Tools:</span> QuickSight, Excel, Slack API, Git, AWS (Lambda, S3, CloudWatch, CDK), Unity Engine</p>
-    <p><span class="label">Methods:</span> Agile, Lean, Six Sigma principles, ETL design, Scrum</p>
+    <p><span class="label">Tools:</span> QuickSight, Excel, Slack API, Git, AWS (Lambda, S3, CloudWatch, CDK, ECS Fargate, Bedrock), Unity Engine</p>
+    <p><span class="label">Methods:</span> Agile, Lean, Six Sigma principles, ETL design, CI/CD</p>
   </div>
 </div>
 
@@ -76,132 +84,67 @@ proven people management, cross-functional coordination, and operational excelle
 
 <div class="job">
   <div class="job-header">
-    <span class="job-title">Data and Reporting Analyst (L4)</span>
-    <span class="job-date">Sep 2023 - Present</span>
+    <span class="job-title">Amazon</span>
+    <span class="job-date">Sep 2021 – Present</span>
   </div>
-  <div class="job-company">Amazon - Belleville, ON</div>
+  <div class="job-company">Belleville & Ajax, ON</div>
+  <div class="job-progression">
+    <span><strong>Data and Reporting Analyst (L4)</strong> — Sep 2023 – Present</span>
+    <span><strong>Process Assistant (L3)</strong> — Jan 2023 – Sep 2023</span>
+    <span><strong>Fulfillment Associate (L1)</strong> — Sep 2021 – Jan 2023</span>
+  </div>
   <ul>
-    <li>Owned Quality KPI performance as site-level SME, supporting #1 network Quality ranking and sustained Top 5 performance</li>
-    <li>Built 36+ automated ETL data pipelines monitoring defect rates, missorts, aged inventory, and labour metrics</li>
-    <li>Designed Python/VBA automation tools and QuickSight dashboards improving operational visibility across 4 departments</li>
-    <li>Created 13 Slack webhook integrations delivering 300+ automated outputs per week to cross-functional teams</li>
-    <li>Drove real-time escalation handling and RCA to resolve shift-critical issues impacting customer delivery</li>
+    <li>Architected 36+ automated ETL pipelines (Python, Redshift, Lambda) delivering 350+ scheduled outputs per week across 35+ sites and 800+ users</li>
+    <li>Built real-time compliance monitoring system (17 scripts, 8 sites) that proactively alerts managers before labour law thresholds are breached — critical for 12hr/day and 60hr/week jurisdictions</li>
+    <li>Designed cross-site Slack webhook platform (13 integrations, 6 FCs) providing automated backlog, safety rotation, and capacity alerts to regional leadership</li>
+    <li>Created AI ticket triage system that cuts 36-hour SLA to under 1 hour for routine issues while surfacing miscategorized high-impact tickets</li>
+    <li>Owned Quality KPI performance as site SME — supported #1 network ranking and sustained Top 5</li>
     <li>Designed inbound high-risk ASIN flagging system (IHRA) scoped across 32 AMXL FCs network-wide</li>
-    <li>Architected autonomous agent orchestration system managing dozens of scheduled workflows, reducing manual monitoring overhead by automating data collection, alerting, and report generation</li>
+    <li>Built autonomous AI agent orchestration layer managing scheduled workflows, monitoring, and reporting with zero manual intervention</li>
+    <li>Promoted L1→L3 within 16 months; managed shift operations for 30+ associates with cross-department coordination</li>
   </ul>
 </div>
 
 <div class="job">
   <div class="job-header">
-    <span class="job-title">Process Assistant (L3)</span>
-    <span class="job-date">Jan 2023 - Sep 2023</span>
+    <span class="job-title">CEO & Founder</span>
+    <span class="job-date">Jun 2025 – Present</span>
   </div>
-  <div class="job-company">Amazon - Ajax, ON</div>
+  <div class="job-company">TapOrbit Studios — Toronto, ON <span class="side">Side Venture</span></div>
   <ul>
-    <li>Led shift operations managing 30+ hourly associates to meet delivery and quality SLAs</li>
-    <li>Owned floor execution including labour allocation, rate monitoring, and real-time problem solving</li>
-    <li>Coordinated cross-functional handoffs between Inbound, Outbound, and ICQA departments</li>
-    <li>Drove safety compliance and quality standards on the floor during peak volume periods</li>
-  </ul>
-</div>
-
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Fulfillment Associate (L1)</span>
-    <span class="job-date">Sep 2021 - Jan 2023</span>
-  </div>
-  <div class="job-company">Amazon - Ajax, ON</div>
-  <ul>
-    <li>Consistently exceeded rate targets across multiple paths (pick, stow, pack)</li>
-    <li>Cross-trained across departments; selected for PA promotion within 16 months</li>
-  </ul>
-</div>
-
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Managing Director / CEO (Side Venture)</span>
-    <span class="job-date">Jan 2025 - Present</span>
-  </div>
-  <div class="job-company">TapOrbit Studios - Toronto, ON</div>
-  <ul>
-    <li>Founded and operate indie game studio managing team members, project timelines, and business finances</li>
-    <li>Shipped debut title Zombie Citizen to iOS App Store and Google Play (2026)</li>
-    <li>Oversee product roadmap, hiring decisions, and go-to-market strategy</li>
-    <li>Step into development (Unity/C#) when needed to unblock technical work</li>
+    <li>Founded and operate indie game studio — managing business operations, finances, team, and project timelines</li>
+    <li>Shipped debut title <em>Zombie Citizen</em> to iOS and Android (2026)</li>
+    <li>Step into Unity/C# development when needed to unblock technical work</li>
   </ul>
 </div>
 
 <div class="job">
   <div class="job-header">
     <span class="job-title">Software Developer</span>
-    <span class="job-date">Sep 2018 - Oct 2019</span>
+    <span class="job-date">Sep 2018 – Oct 2019</span>
   </div>
-  <div class="job-company">Treasured - Markham, ON</div>
+  <div class="job-company">Treasured — Markham, ON</div>
   <ul>
-    <li>Researched and developed VR/AR virtual world functionality using Oculus and Magic Leap platforms</li>
-    <li>Partnered with CTO on R&D direction; managed task delegation across a small engineering team</li>
-    <li>Built interactive experiences for a SaaS product creating memorial virtual worlds for bereaved families</li>
+    <li>R&D on VR/AR virtual world SaaS product (Oculus, Magic Leap); partnered with CTO on technical direction</li>
   </ul>
 </div>
 
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Game Developer (Team Lead)</span>
-    <span class="job-date">Oct 2016 - Jan 2018</span>
-  </div>
-  <div class="job-company">Transhumanoid Productions - Remote (Worldwide team)</div>
-  <ul>
-    <li>Led UI development and custom dialog tree system for AA-scope game project</li>
-    <li>Managed task delegation and progress reporting to Principal Engineer across a distributed team</li>
-    <li>Maintained project repository and version control workflows</li>
-    <li>Developed in Unity Engine with focus on UI functionality and narrative systems</li>
-  </ul>
+<div class="prev-roles">
+  <p><strong>Previous Engineering Roles (2014–2018)</strong></p>
+  <p><span class="role-line">Transhumanoid Productions</span> — Game Developer, Team Lead (remote, worldwide distributed team)</p>
+  <p><span class="role-line">Ruckus Games</span> — Game Developer, Engineering Lead (Toronto)</p>
+  <p>Owned full development lifecycles, led distributed teams, built end-to-end game systems in Unity/C#</p>
 </div>
 
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Game Developer (Engineering Lead)</span>
-    <span class="job-date">Sep 2014 - Oct 2017</span>
-  </div>
-  <div class="job-company">Ruckus Games - Toronto, ON</div>
-  <ul>
-    <li>Owned full development lifecycle as sole engineer in a small studio, reporting directly to CEO</li>
-    <li>Built end-to-end game systems: mechanics, algorithms, level design, monetization strategy</li>
-    <li>Developed prototype games in Unity Engine pitched and sold to local companies</li>
-    <li>Managed project repository including code reviews and release coordination</li>
-  </ul>
-</div>
-
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Peer Tutor (Senior/Team Lead)</span>
-    <span class="job-date">Sep 2014 - May 2017</span>
-  </div>
-  <div class="job-company">George Brown College - Toronto, ON</div>
-  <ul>
-    <li>Mentored fellow students in programming, math, and game development coursework</li>
-    <li>Served as go-to resource and informal team lead among peer tutoring staff</li>
-    <li>Developed communication and teaching skills translating complex technical concepts</li>
-  </ul>
-</div>
-
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Data Entry Clerk (Senior/Team Lead)</span>
-    <span class="job-date">Jul 2011 - Sep 2014</span>
-  </div>
-  <div class="job-company">MPAC (Municipal Property Assessment Corporation) - Toronto, ON</div>
-  <ul>
-    <li>Processed and validated property assessment data with high accuracy over 3+ years</li>
-    <li>Became go-to resource and informal team lead among peers at same level</li>
-    <li>First professional role establishing foundation in data handling and attention to detail</li>
-  </ul>
+<h2>Publications</h2>
+<div class="publications">
+  <p>Aytona, C. (2026). <em>SHARD: Self-Healing Autonomous Resilient Delegation — A Pattern Language for Persistent AI Agent Harnesses.</em> Zenodo / SSRN (preprint). DOI: 10.5281/zenodo.20474819</p>
 </div>
 
 <h2>Education</h2>
 <div class="education">
-  <p><strong>Bachelor of Computer Science</strong> - Ontario Tech University, 2021</p>
-  <p><strong>Advanced Diploma in Game Programming</strong> - George Brown College, 2017 - Graduate with Honours | Dean's List | Student Representative | Leadership Academy</p>
+  <p><strong>Bachelor of Computer Science</strong> — Ontario Tech University, 2021</p>
+  <p><strong>Advanced Diploma in Game Programming</strong> — George Brown College, 2017 — Graduate with Honours | Dean's List</p>
 </div>
 
 </body>
