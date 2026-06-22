@@ -13,23 +13,23 @@ const projects = [
   {
     title: 'Ticket Auto-Resolver',
     date: 'Q2 2026',
-    desc: 'AI triage system that detects self-recovered job failures, auto-resolves tickets with root cause analysis, and escalates unresolvable issues with context.',
+    desc: 'AI triage system that monitors all assigned tickets — ETL failures, webhook issues, dashboard requests, app problems — auto-resolves routine ones with root cause analysis, and escalates high-impact items that may have been miscategorized.',
     tools: ['Python', 'LLM API', 'Ticketing API', 'Cron'],
-    impact: 'Resolution time reduced from 24–48 hours to under 1 hour for transient failures across 36 monitored ETL jobs',
+    impact: 'Cuts 36-hour SLA tickets to under 1 hour for routine issues — surfaces high-impact tickets that may have been miscategorized',
   },
   {
     title: 'Attendance & Shift Overstay Monitor',
     date: 'Q2 2026',
-    desc: 'Real-time working hours compliance system monitoring 8 fulfillment centers for associates exceeding overtime thresholds, plus a retroactive audit layer catching edge cases missed by the primary check.',
+    desc: 'Proactive working hours compliance system monitoring 8 fulfillment centers — alerts managers before associates hit overtime thresholds, with a retroactive audit layer catching edge cases. Critical for jurisdictions with 12-hour daily and 60-hour weekly labour law limits.',
     tools: ['Python', 'REST APIs', 'Slack Webhooks', 'SQLite'],
-    impact: '17 scheduled scripts across 8 sites — replaced weekly manual Excel reviews with hourly automated compliance checks',
+    impact: '17 scheduled scripts across 8 sites — proactive alerts prevent labour law violations before they occur, replacing reactive end-of-week discovery',
   },
   {
     title: 'TOM Department Labour Tracker',
     date: 'Q2 2026',
     desc: 'Automated labour metrics reporting for Transportation Operations Management teams, tracking hours and headcount across multiple fulfillment centers with shift-aligned delivery.',
     tools: ['Python', 'SQL', 'Slack Webhooks'],
-    impact: 'Deployed across 4 sites — replaced 2+ hours of daily manual data pulls per site with zero-touch automated delivery',
+    impact: 'Saves 2+ hours per site per summary report — plus live hourly updates freeing managers from manual data pulls across 4 sites',
   },
   {
     title: 'DART Coaching Tracker',
