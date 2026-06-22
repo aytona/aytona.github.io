@@ -5,46 +5,50 @@
 <style>
 @page {
     size: letter;
-    margin: 0.5in 0.6in;
+    margin: 0.4in 0.55in;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Calibri', 'Segoe UI', sans-serif; font-size: 10pt; line-height: 1.4; color: #222; }
+body { font-family: 'Calibri', 'Segoe UI', sans-serif; font-size: 10pt; line-height: 1.3; color: #222; }
 a { color: #222; text-decoration: none; }
 
-.header { text-align: center; margin-bottom: 10px; }
+.header { text-align: center; margin-bottom: 6px; }
 .header h1 { font-size: 20pt; font-weight: bold; margin-bottom: 2px; }
 .header .subtitle { font-size: 11pt; color: #444; margin-bottom: 4px; }
 .header .contact { font-size: 9pt; color: #555; }
 .header .contact a { color: #555; }
 
-.summary { font-size: 9.5pt; color: #333; margin-bottom: 12px; text-align: justify; }
+.summary { font-size: 9.5pt; color: #333; margin-bottom: 8px; text-align: justify; }
 
-h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1.5px solid #333; padding-bottom: 2px; margin: 14px 0 8px 0; }
+h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1.5px solid #333; padding-bottom: 2px; margin: 10px 0 6px 0; }
 
-.skills-grid { display: flex; gap: 20px; font-size: 9.5pt; }
-.skills-grid .col { flex: 1; }
-.skills-grid .col p { margin-bottom: 3px; }
-.skills-grid .label { font-weight: bold; }
+.highlights { font-size: 9.5pt; margin-bottom: 8px; }
+.highlights ul { padding-left: 16px; }
+.highlights li { margin-bottom: 3px; }
+.highlights .metric { font-weight: bold; }
 
-.job { margin-bottom: 10px; }
+.skills { font-size: 9.5pt; margin-bottom: 8px; }
+.skills p { margin-bottom: 3px; }
+.skills .label { font-weight: bold; }
+
+.job { margin-bottom: 8px; }
 .job-header { display: flex; justify-content: space-between; align-items: baseline; }
 .job-title { font-weight: bold; font-size: 10.5pt; }
 .job-date { font-size: 9pt; color: #555; }
 .job-company { font-size: 9.5pt; color: #444; margin-bottom: 3px; }
-.job-company .side { font-size: 8pt; background: #eee; padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
 .job-progression { font-size: 9pt; color: #555; margin-bottom: 4px; }
 .job-progression span { display: inline-block; margin-right: 12px; }
 .job ul { padding-left: 16px; font-size: 9.5pt; }
 .job li { margin-bottom: 2px; }
 
-.prev-roles { font-size: 9.5pt; margin-bottom: 10px; }
+.prev-roles { font-size: 9.5pt; margin-bottom: 8px; }
 .prev-roles p { margin-bottom: 2px; }
 .prev-roles .role-line { font-weight: bold; }
 
-.publications { font-size: 9.5pt; margin-bottom: 10px; }
+.publications { font-size: 9.5pt; margin-bottom: 4px; }
 .publications p { margin-bottom: 3px; }
 
-.education p { font-size: 9.5pt; margin-bottom: 3px; }
+.education { font-size: 9.5pt; }
+.education p { margin-bottom: 3px; }
 </style>
 </head>
 <body>
@@ -60,24 +64,19 @@ h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; border-bot
   </div>
 </div>
 
+<h2>Summary</h2>
 <p class="summary">
-Data and automation engineer building production-grade ETL pipelines, real-time monitoring systems, and
-AI-driven operational tools at enterprise scale. 8+ years of software engineering across startups,
-operations technology, and applied AI — including a published research paper on autonomous agent
-architecture. Open to relocation for the right opportunity.
+Data and automation engineer building production-grade ETL pipelines, real-time monitoring systems, and AI-driven operational tools at enterprise scale. 8+ years across startups, operations technology, and applied AI — including published research on autonomous agent architecture. Systems currently serve 800+ users across 35+ facilities. Key results: reduced ticket resolution from 36 hours to under 1 hour, eliminated 40+ hours/week manual reporting across 8 sites, supported site Quality KPI to #1 network ranking.
 </p>
 
 <h2>Technical Skills</h2>
-<div class="skills-grid">
-  <div class="col">
-    <p><span class="label">Languages:</span> Python, SQL, JavaScript, VBA, C#</p>
-    <p><span class="label">Databases:</span> Amazon Redshift, MySQL, DynamoDB</p>
-    <p><span class="label">Frameworks:</span> pandas, selenium, boto3, Flask, Playwright</p>
-  </div>
-  <div class="col">
-    <p><span class="label">Tools:</span> QuickSight, Excel, Slack API, Git, AWS (Lambda, S3, CloudWatch, CDK, ECS Fargate, Bedrock), Unity Engine</p>
-    <p><span class="label">Methods:</span> Agile, Lean, Six Sigma principles, ETL design, CI/CD</p>
-  </div>
+<div class="skills">
+  <p><span class="label">Languages:</span> Python, SQL, JavaScript/TypeScript, VBA, C#</p>
+  <p><span class="label">Data:</span> Amazon Redshift (Spectrum), DynamoDB, MySQL, S3 data lakes, pandas, ETL/ELT design</p>
+  <p><span class="label">Cloud:</span> AWS (Lambda, EventBridge, Step Functions, ECS Fargate, CDK, CloudWatch, Bedrock, API Gateway)</p>
+  <p><span class="label">Automation:</span> Slack API, Selenium, Playwright, Flask, boto3, CI/CD pipelines</p>
+  <p><span class="label">Visualization:</span> QuickSight (Author), Excel/VBA, Chart.js, HTML dashboards</p>
+  <p><span class="label">Methods:</span> Event-driven architecture, Agile, Lean/Six Sigma, infrastructure-as-code</p>
 </div>
 
 <h2>Professional Experience</h2>
@@ -94,14 +93,11 @@ architecture. Open to relocation for the right opportunity.
     <span><strong>Fulfillment Associate (L1)</strong> — Sep 2021 – Jan 2023</span>
   </div>
   <ul>
-    <li>Architected 36+ automated ETL pipelines (Python, Redshift, Lambda) delivering 350+ scheduled outputs per week across 35+ sites and 800+ users</li>
-    <li>Built real-time compliance monitoring system (17 scripts, 8 sites) that proactively alerts managers before labour law thresholds are breached — critical for 12hr/day and 60hr/week jurisdictions</li>
-    <li>Designed cross-site Slack webhook platform (13 integrations, 6 FCs) providing automated backlog, safety rotation, and capacity alerts to regional leadership</li>
-    <li>Created AI ticket triage system that cuts 36-hour SLA to under 1 hour for routine issues while surfacing miscategorized high-impact tickets</li>
-    <li>Owned Quality KPI performance as site SME — supported #1 network ranking and sustained Top 5</li>
-    <li>Designed inbound high-risk ASIN flagging system (IHRA) scoped across 32 AMXL FCs network-wide</li>
-    <li>Built autonomous AI agent orchestration layer managing scheduled workflows, monitoring, and reporting with zero manual intervention</li>
-    <li>Promoted L1→L3 within 16 months; managed shift operations for 30+ associates with cross-department coordination</li>
+    <li>Architected 36+ ETL pipelines (Python, Redshift Spectrum, Lambda + EventBridge) and 13 Slack integrations across 35+ sites — 350+ automated outputs/week, zero manual intervention</li>
+    <li>Designed event-driven compliance monitoring (17 microservices, 8 sites) using SQLite state + Slack webhooks — flags labour law violations before breach across 12hr/day and 60hr/week jurisdictions</li>
+    <li>Engineered AI ticket triage system (AWS Bedrock Claude, DynamoDB, Lambda) — cut mean resolution from 36 hours to under 1 hour while surfacing miscategorized high-impact issues</li>
+    <li>Built autonomous agent orchestration layer (11 services, persistent memory, self-healing, zero-token routing) managing monitoring, reporting, and incident response</li>
+    <li>Promoted L1→L3 in 16 months; managed 30+ associates across inbound, stow, and ICQA as Process Assistant</li>
   </ul>
 </div>
 
@@ -110,41 +106,26 @@ architecture. Open to relocation for the right opportunity.
     <span class="job-title">CEO & Founder</span>
     <span class="job-date">Jun 2025 – Present</span>
   </div>
-  <div class="job-company">TapOrbit Studios — Toronto, ON <span class="side">Side Venture</span></div>
+  <div class="job-company">TapOrbit Studios — Toronto, ON</div>
   <ul>
-    <li>Founded and operate indie game studio — managing business operations, finances, team, and project timelines</li>
-    <li>Shipped debut title <em>Zombie Citizen</em> to iOS and Android (2026)</li>
-    <li>Step into Unity/C# development when needed to unblock technical work</li>
-  </ul>
-</div>
-
-<div class="job">
-  <div class="job-header">
-    <span class="job-title">Software Developer</span>
-    <span class="job-date">Sep 2018 – Oct 2019</span>
-  </div>
-  <div class="job-company">Treasured — Markham, ON</div>
-  <ul>
-    <li>R&D on VR/AR virtual world SaaS product (Oculus, Magic Leap); partnered with CTO on technical direction</li>
+    <li>Founded indie game studio (side venture) — own operations, finances, and timelines; shipped Zombie Citizen to iOS/Android (2026)</li>
   </ul>
 </div>
 
 <div class="prev-roles">
-  <p><strong>Previous Engineering Roles (2014–2018)</strong></p>
-  <p><span class="role-line">Transhumanoid Productions</span> — Game Developer, Team Lead (remote, worldwide distributed team)</p>
-  <p><span class="role-line">Ruckus Games</span> — Game Developer, Engineering Lead (Toronto)</p>
-  <p>Owned full development lifecycles, led distributed teams, built end-to-end game systems in Unity/C#</p>
+  <p><strong>Previous:</strong> <span class="role-line">Treasured</span> (Software Developer, VR/AR SaaS, 2018–19) | <span class="role-line">Transhumanoid Productions</span> (Team Lead) | <span class="role-line">Ruckus Games</span> (Engineering Lead) — Full lifecycle ownership, distributed teams of 4–8, Unity/C#.</p>
 </div>
 
 <h2>Publications</h2>
 <div class="publications">
-  <p>Aytona, C. (2026). <em>SHARD: Self-Healing Autonomous Resilient Delegation — A Pattern Language for Persistent AI Agent Harnesses.</em> Zenodo / SSRN (preprint). DOI: 10.5281/zenodo.20474819</p>
+  <p>Aytona, C. (2026). SHARD: Self-Healing Autonomous Resilient Delegation. Zenodo/SSRN. DOI: 10.5281/zenodo.20474819</p>
+  <p>Aytona, C. (2026). Resource-Efficient Architectures for Persistent Agent Systems. In preparation.</p>
 </div>
 
 <h2>Education</h2>
 <div class="education">
-  <p><strong>Bachelor of Computer Science</strong> — Ontario Tech University, 2021</p>
-  <p><strong>Advanced Diploma in Game Programming</strong> — George Brown College, 2017 — Graduate with Honours | Dean's List</p>
+  <p><strong>BSc Computer Science</strong> — Ontario Tech University, 2021</p>
+  <p><strong>Adv. Diploma Game Programming</strong> — George Brown Polytechnic, 2017 (Honours)</p>
 </div>
 
 </body>
