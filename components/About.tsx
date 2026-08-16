@@ -14,7 +14,10 @@ export default function About() {
         <div className="w-64 h-64 mx-auto rounded-2xl overflow-hidden glass">
           <img
             src="/profile.jpg"
-            alt="Christopher Aytona"
+            alt="Christopher Aytona, Data Analyst and Automation Developer"
+            width={256}
+            height={256}
+            loading="lazy"
             className="w-full h-full object-cover"
             onError={(e) => {
               const target = e.target as HTMLImageElement

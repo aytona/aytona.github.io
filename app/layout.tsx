@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   description: 'Data Analyst & Automation Developer building ETL pipelines, AI agents, and operational intelligence at scale — and founder of TapOrbit Studios, shipping commercial games. Python, SQL, AWS, QuickSight.',
   keywords: ['Data Analyst', 'Automation Developer', 'ETL', 'Python', 'SQL', 'AWS', 'QuickSight', 'Game Developer', 'Unity', 'Founder', 'TapOrbit Studios'],
   authors: [{ name: 'Christopher Aytona' }],
+  metadataBase: new URL('https://aytona.github.io'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Christopher Aytona | Data Analyst & Automation Developer',
     description: 'Building ETL pipelines, AI agents, and operational intelligence at scale. Founder of TapOrbit Studios.',
@@ -19,13 +23,13 @@ export const metadata: Metadata = {
     siteName: 'Christopher Aytona',
     type: 'website',
     locale: 'en_US',
-    images: [{ url: 'https://aytona.github.io/og.png', width: 1200, height: 630, alt: 'Christopher Aytona — Data Analyst & Automation Developer' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Christopher Aytona — Data Analyst & Automation Developer' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Christopher Aytona | Data Analyst & Automation Developer',
     description: 'Building ETL pipelines, AI agents, and operational intelligence at scale. Founder of TapOrbit Studios.',
-    images: ['https://aytona.github.io/og.png'],
+    images: ['/og.png'],
   },
   robots: { index: true, follow: true },
   icons: {
@@ -35,6 +39,22 @@ export const metadata: Metadata = {
     ],
     apple: '/icon-192.png',
   },
+  manifest: '/site.webmanifest',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Christopher Aytona',
+  url: 'https://aytona.github.io',
+  image: 'https://aytona.github.io/headshot.jpg',
+  jobTitle: 'Data Analyst & Automation Developer',
+  description: 'Building ETL pipelines, AI agents, and operational intelligence at scale. Founder of TapOrbit Studios.',
+  knowsAbout: ['Python', 'SQL', 'AWS', 'ETL', 'Data Analytics', 'Machine Learning', 'Game Development', 'Unity'],
+  sameAs: [
+    'https://github.com/aytona',
+    'https://www.linkedin.com/in/christopheraytona',
+  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -42,6 +62,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={spaceGrotesk.variable}>
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="theme-color" content="#0c0c0c" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={spaceGrotesk.className}>{children}</body>
     </html>

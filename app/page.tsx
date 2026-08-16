@@ -15,15 +15,15 @@ export default function Home() {
     <main>
       <CursorGlow />
       <Nav />
-      <section id="home"><Hero /></section>
-      <section id="about"><About /></section>
-      <section id="experience"><Experience /></section>
+      <section id="home" aria-label="Introduction"><Hero /></section>
+      <section id="about" aria-label="About Christopher Aytona"><About /></section>
+      <section id="experience" aria-label="Work experience"><Experience /></section>
       <Testimonials />
-      <section id="skills"><Skills /></section>
-      <section id="projects"><Projects /></section>
-      <section id="games"><Games /></section>
-      <section id="research"><Research /></section>
-      <section id="contact"><Contact /></section>
+      <section id="skills" aria-label="Technical skills"><Skills /></section>
+      <section id="projects" aria-label="Data engineering projects"><Projects /></section>
+      <section id="games" aria-label="Game development portfolio"><Games /></section>
+      <section id="research" aria-label="Academic research and publications"><Research /></section>
+      <section id="contact" aria-label="Contact information"><Contact /></section>
     </main>
   )
 }

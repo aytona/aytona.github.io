@@ -28,9 +28,10 @@ export default function Games() {
           <div className="relative p-8 md:p-10 flex flex-col md:flex-row gap-7">
             <img
               src="/zombie-citizen-icon.png"
-              alt="Zombie Citizen app icon"
+              alt="Zombie Citizen app icon — top-down zombie shooter game"
               width={96}
               height={96}
+              loading="lazy"
               className="w-24 h-24 rounded-2xl flex-shrink-0 self-start"
             />
             <div className="flex-1">
@@ -69,7 +70,7 @@ export default function Games() {
                   className="transition-transform hover:scale-105"
                   aria-label="Download Zombie Citizen on the App Store"
                 >
-                  <img src="/badge-app-store.png" alt="Download on the App Store" height={40} className="h-10 w-auto" />
+                  <img src="/badge-app-store.png" alt="Download on the App Store" width={135} height={40} loading="lazy" className="h-10 w-auto" />
                 </a>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.taporbitstudios.zombiecitizen&hl=en_US"
@@ -77,7 +78,7 @@ export default function Games() {
                   className="transition-transform hover:scale-105"
                   aria-label="Get Zombie Citizen on Google Play"
                 >
-                  <img src="/badge-google-play.png" alt="Get it on Google Play" height={40} className="h-10 w-auto" />
+                  <img src="/badge-google-play.png" alt="Get it on Google Play" width={135} height={40} loading="lazy" className="h-10 w-auto" />
                 </a>
               </div>
             </div>
@@ -126,7 +127,8 @@ export default function Games() {
           <div className="order-1 md:order-2 md:w-[65%] relative min-h-[240px] overflow-hidden">
             <img
               src="/everlasting-odyssey-splash.jpg"
-              alt="Everlasting Odyssey splash art"
+              alt="Everlasting Odyssey splash art — tactical RPG with open world exploration"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover origin-bottom-left eo-art-mask"
               style={{
                 objectPosition: '2% 100%',

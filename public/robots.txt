@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aytona.github.io/sitemap.xml

@@ -101,12 +101,12 @@ export default function Projects() {
       <div className="relative w-full max-w-5xl">
         {/* Arrows */}
         {current > 0 && (
-          <button onClick={prev} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center text-xl hover:border-cyan-400/30 transition-colors">
+          <button onClick={prev} aria-label="Previous projects" className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center text-xl hover:border-cyan-400/30 transition-colors">
             ‹
           </button>
         )}
         {current < maxIndex && (
-          <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center text-xl hover:border-cyan-400/30 transition-colors">
+          <button onClick={next} aria-label="Next projects" className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center text-xl hover:border-cyan-400/30 transition-colors">
             ›
           </button>
         )}
@@ -154,6 +154,7 @@ export default function Projects() {
             <button
               key={i}
               onClick={() => setCurrent(i)}
+              aria-label={`Go to project page ${i + 1}`}
               className={`w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-cyan-400' : 'bg-neutral-700 hover:bg-neutral-500'}`}
             />
           ))}
