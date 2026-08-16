@@ -48,7 +48,7 @@ export default function About() {
           </div>
           {/* Education - compact */}
           <div className="mt-6 pt-4 border-t border-neutral-800">
-            <div className="flex flex-col gap-1 text-sm text-neutral-500">
+            <div className="flex flex-col gap-1 text-sm text-neutral-400">
               <span>🎓 BSc (Hons) Computer Science — Ontario Tech University, 2021</span>
               <span>🎓 Adv. Diploma Game Programming — George Brown Polytechnic, 2017</span>
             </div>

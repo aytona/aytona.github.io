@@ -63,7 +63,7 @@ export default function Experience() {
                   {exp.side && <span className="text-[10px] px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-400">Side Venture</span>}
                 </div>
                 <h3 className="text-lg font-bold">{exp.title}</h3>
-                <p className="text-neutral-500 text-sm">{exp.company}</p>
+                <p className="text-neutral-400 text-sm">{exp.company}</p>
                 <p className="text-neutral-400 text-sm mt-2">{exp.desc}</p>
               </div>
             </motion.div>

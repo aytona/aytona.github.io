@@ -51,7 +51,7 @@ export default function Games() {
               <p className="text-neutral-300 text-sm md:text-base mt-3">
                 A fast, top-down shooter where every run pulls you deeper into chaos.
               </p>
-              <p className="text-neutral-500 text-sm mt-2 max-w-2xl">
+              <p className="text-neutral-400 text-sm mt-2 max-w-2xl">
                 Fight through relentless waves of zombies, take on powerful bosses, and build your strength
                 as the challenge intensifies. Collect materials, upgrade your weapons, and stack powerful
                 buffs to adapt, survive, and go further than before.

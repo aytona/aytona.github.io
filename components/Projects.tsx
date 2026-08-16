@@ -132,8 +132,8 @@ export default function Projects() {
                 <div>
                   <span className="text-[11px] text-cyan-400 font-medium">{p.date}</span>
                   <h3 className="text-lg font-bold group-hover:text-cyan-400 transition-colors mt-1">{p.title}</h3>
-                  <p className={`text-neutral-500 text-sm mt-2 ${expanded === i ? '' : 'line-clamp-3'}`}>{p.desc}</p>
-                  {expanded !== i && <span className="text-[10px] text-neutral-600 mt-1 block">tap to expand</span>}
+                  <p className={`text-neutral-400 text-sm mt-2 ${expanded === i ? '' : 'line-clamp-3'}`}>{p.desc}</p>
+                  {expanded !== i && <span className="text-[10px] text-neutral-400 mt-1 block">tap to expand</span>}
                 </div>
                 <div className="mt-auto pt-3">
                   <div className="flex flex-wrap gap-1.5 mb-2">
@@ -155,7 +155,7 @@ export default function Projects() {
               key={i}
               onClick={() => setCurrent(i)}
               aria-label={`Go to project page ${i + 1}`}
-              className={`w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-cyan-400' : 'bg-neutral-700 hover:bg-neutral-500'}`}
+              className={`w-3 h-3 rounded-full transition-colors p-1 ${i === current ? 'bg-cyan-400' : 'bg-neutral-700 hover:bg-neutral-500'}`}
             />
           ))}
         </div>

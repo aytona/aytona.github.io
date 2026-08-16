@@ -55,7 +55,7 @@ export default function Research() {
                 </span>
               )}
             </div>
-            <p className="text-neutral-500 text-sm mt-1">
+            <p className="text-neutral-400 text-sm mt-1">
               {pub.authors} · {pub.year} · {pub.venue}
             </p>
             <p className="text-neutral-400 text-sm mt-3">{pub.abstract}</p>

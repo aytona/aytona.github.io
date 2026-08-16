@@ -39,7 +39,7 @@ export default function Testimonials() {
             <p className="text-neutral-300 text-sm italic leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
             <div className="mt-4 pt-3 border-t border-neutral-800">
               <p className="text-sm font-medium text-cyan-400">{t.name}</p>
-              <p className="text-xs text-neutral-500">{t.role}</p>
+              <p className="text-xs text-neutral-400">{t.role}</p>
               {t.lps && <p className="text-[10px] text-pink-400 mt-1">{t.lps}</p>}
             </div>
           </motion.blockquote>
